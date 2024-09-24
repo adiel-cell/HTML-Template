@@ -5,14 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invoice</title>
     <style>
-
-        table {
-         flout: left;   
-        }
-        
         body {
             font-family: Arial, sans-serif;
-            background-image: url('vila.jpg'); /* Add your image path here */
+            background-image: url('vila.jpg'); /* Make sure this path is correct */
             background-size: cover; /* Makes the image cover the whole page */
             background-position: center; /* Centers the image */
             background-repeat: no-repeat; /* Prevents repeating of the image */
@@ -24,6 +19,8 @@
             border: 2px solid black;
             padding: 20px;
             background-color: white;
+            opacity: 0.95; /* Semi-transparent to show background */
+            overflow: auto; /* Clears float if any */
         }
         .invoice-header {
             text-align: center;
@@ -94,7 +91,8 @@
     </div>
 
     <table class="invoice-info">
-        <tr><td><strong>Invoice #123456789</strong><br></td>
+        <tr>
+            <td><strong>Invoice #123456789</strong><br></td>
             <td class="text-right">
                 <strong>Date:</strong><br>
                 September 22, 2024
@@ -103,7 +101,6 @@
 
         <tr>
             <td>
-                
                 Pay to:<br>
                 Construction Depot<br>
                 123 Main St.<br>
