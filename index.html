@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('vila.jpg'); /* Add your image path here */
+            background-size: cover; /* Makes the image cover the whole page */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents repeating of the image */
+            background-attachment: fixed; /* Keeps the image fixed in place while scrolling */
+        }
+        .invoice-container {
+            max-width: 600px;
+            margin: auto;
+            border: 2px solid black;
+            padding: 20px;
+            background-color: white;
+        }
+        .invoice-header {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .invoice-info {
+            width: 100%;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .invoice-info td, .invoice-info th {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        .invoice-info th {
+            background-color: #f2f2f2;
+        }
+        .invoice-info tr:nth-child(odd) {
+            background-color: #f5c6cb; /* Pale red for odd rows */
+        }
+        .invoice-info tr:nth-child(even) {
+            background-color: #c6e0f5; /* Pale blue for even rows */
+        }
+        .invoice-info tr:hover {
+            background-color: #e2e3e5; /* Light grey on hover */
+        }
+        .invoice-summary {
+            margin-top: 20px;
+        }
+        .summary-table {
+            width: 100%;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .summary-table td, .summary-table th {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        .summary-table th {
+            background-color: #f2f2f2;
+        }
+        .summary-table tr:nth-child(odd) {
+            background-color: #f5c6cb; /* Pale red for odd rows */
+        }
+        .summary-table tr:nth-child(even) {
+            background-color: #c6e0f5; /* Pale blue for even rows */
+        }
+        .summary-table tr:hover {
+            background-color: #e2e3e5; /* Light grey on hover */
+        }
+        .text-right {
+            text-align: right;
+        }
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="invoice-container">
+    <div class="invoice-header">
+        Construction Depot
+    </div>
+
+    <table class="invoice-info">
+        <tr><td><strong>Invoice #123456789</strong><br></td>
+            <td class="text-right">
+                <strong>Date:</strong><br>
+                September 22, 2024
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                
+                Pay to:<br>
+                Construction Depot<br>
+                123 Main St.<br>
+                New York, Cubao, QC
+            </td>
+            <td>
+                <strong>Customer:</strong><br>
+                John Acosta<br>
+                321 Willowville<br>
+                Mexico, Pampanga
+            </td>
+        </tr>
+    </table>
+
+    <table class="invoice-info" style="margin-top: 20px;">
+        <tr>
+            <th class="text-center">Name / Description</th>
+            <th class="text-center">Qty.</th>
+            <th class="text-center">Unit Cost</th>
+            <th class="text-center">Cost</th>
+        </tr>
+        <tr>
+            <td>Paperclips</td>
+            <td class="text-center">1000</td>
+            <td class="text-right">$0.01</td>
+            <td class="text-right">$10.00</td>
+        </tr>
+        <tr>
+            <td>Staples (box)</td>
+            <td class="text-center">100</td>
+            <td class="text-right">$1.00</td>
+            <td class="text-right">$100.00</td>
+        </tr>
+    </table>
+
+    <div class="invoice-summary">
+        <table class="summary-table">
+            <tr>
+                <td class="text-right"><strong>Subtotal</strong></td>
+                <td class="text-right">$110.00</td>
+            </tr>
+            <tr>
+                <td class="text-right"><strong>Tax (8%)</strong></td>
+                <td class="text-right">$8.80</td>
+            </tr>
+            <tr>
+                <td class="text-right"><strong>Grand Total</strong></td>
+                <td class="text-right"><strong>$118.80</strong></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
