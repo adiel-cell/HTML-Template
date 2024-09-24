@@ -5,82 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invoice</title>
     <style>
+
         body {
             font-family: Arial, sans-serif;
-            background-image: url('vila.jpg'); /* Make sure this path is correct */
-            background-size: cover; /* Makes the image cover the whole page */
-            background-position: center; /* Centers the image */
-            background-repeat: no-repeat; /* Prevents repeating of the image */
-            background-attachment: fixed; /* Keeps the image fixed in place while scrolling */
+            background-image: url('vila.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333; 
         }
+
         .invoice-container {
             max-width: 600px;
             margin: auto;
-            border: 2px solid black;
+            border: 2px solid #8A6452; 
             padding: 20px;
-            background-color: white;
-            opacity: 0.95; /* Semi-transparent to show background */
-            overflow: auto; /* Clears float if any */
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
         }
+
         .invoice-header {
             text-align: center;
             font-size: 24px;
             font-weight: bold;
             margin-bottom: 20px;
+            color: #8A6452; 
         }
+
         .invoice-info {
             width: 100%;
-            border: 1px solid black;
+            border: 1px solid #B8A392; 
             border-collapse: collapse;
         }
+
         .invoice-info td, .invoice-info th {
-            border: 1px solid black;
+            border: 1px solid #B8A392;
             padding: 8px;
             text-align: left;
         }
+
         .invoice-info th {
-            background-color: #f2f2f2;
+            background-color: #F2D3AB; 
+            color: #4E3B2A; 
         }
+
         .invoice-info tr:nth-child(odd) {
-            background-color: #f5c6cb; /* Pale red for odd rows */
+            background-color: #FEEBC8; 
         }
+
         .invoice-info tr:nth-child(even) {
-            background-color: #c6e0f5; /* Pale blue for even rows */
+            background-color: #F2D3AB; 
         }
+
         .invoice-info tr:hover {
-            background-color: #e2e3e5; /* Light grey on hover */
+            background-color: #F8B88B; 
         }
+
         .invoice-summary {
             margin-top: 20px;
         }
+
         .summary-table {
             width: 100%;
-            border: 1px solid black;
+            border: 1px solid #B8A392;
             border-collapse: collapse;
         }
+
         .summary-table td, .summary-table th {
-            border: 1px solid black;
+            border: 1px solid #B8A392;
             padding: 8px;
             text-align: left;
         }
+
         .summary-table th {
-            background-color: #f2f2f2;
+            background-color: #F2D3AB;
+            color: #4E3B2A;
         }
+
         .summary-table tr:nth-child(odd) {
-            background-color: #f5c6cb; /* Pale red for odd rows */
+            background-color: #FEEBC8;
         }
+
         .summary-table tr:nth-child(even) {
-            background-color: #c6e0f5; /* Pale blue for even rows */
+            background-color: #F2D3AB;
         }
+
         .summary-table tr:hover {
-            background-color: #e2e3e5; /* Light grey on hover */
+            background-color: #F8B88B;
         }
+
         .text-right {
             text-align: right;
         }
+
         .text-center {
             text-align: center;
         }
+
     </style>
 </head>
 <body>
